@@ -2,6 +2,5 @@
 , services : (Optional (List ./service.dhall))
 , routes : (Optional (List ./route.dhall))
 , upstreams : (Optional (List ./upstream.dhall))
-, target : (Optional (List ./target.dhall))
-, plugins : (Optional (List ./plugins.dhall))
+, targets : (Optional (List ./target.dhall))
 }

@@ -10,5 +10,5 @@
 , sources : (Optional (List Text))
 , destinations : (Optional (List Text))
 , tags : (Optional (List Text))
-, service : (Optional Text)
+, service : Text
 }

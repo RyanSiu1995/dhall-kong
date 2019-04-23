@@ -1,4 +1,5 @@
 { name : (Text)
+, retries : (Optional Natural)
 , url : (Optional (Text))
 , host : (Optional (Text))
 , port : (Optional (Text))
