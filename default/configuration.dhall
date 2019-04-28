@@ -1,6 +1,6 @@
 { _format_version = "1.1"
-, services = ([] : List ../types/service.dhall)
-, routes = ([] : List ../types/route.dhall)
-, upstreams = ([] : List ../types/upstream.dhall)
-, targets = ([] : List ../types/target.dhall)
-}
+, services = ([] : Optional (List ../types/service.dhall))
+, routes = ([] : Optional (List ../types/route.dhall))
+, upstreams = ([] : Optional (List ../types/upstream.dhall))
+, targets = ([] : Optional (List ../types/target.dhall))
+} : ../types/configuration.dhall
