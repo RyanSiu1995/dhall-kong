@@ -3,4 +3,5 @@
 , routes : (Optional (List ./route.dhall))
 , upstreams : (Optional (List ./upstream.dhall))
 , targets : (Optional (List ./target.dhall))
+, certificates : (Optional (List ./certificate.dhall))
 }
