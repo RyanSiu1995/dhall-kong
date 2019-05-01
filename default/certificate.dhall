@@ -3,5 +3,5 @@
   { cert = cert
   , key = key
   , tags = ([] : Optional (List Text))
-  , snis = ([] : Optional ../types/sni.dhall)
+  , snis = ([] : Optional (List ../types/sni.dhall))
   } : ../types/certificate.dhall
