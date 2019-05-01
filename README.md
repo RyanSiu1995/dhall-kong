@@ -11,8 +11,8 @@ to define a configurable configuration file for Kong.
   - [ ] Route
   - [ ] Consumer
   - [ ] Plugin
-  - [ ] Certificate
-  - [ ] SNI
+  - [X] Certificate
+  - [X] SNI
   - [ ] Upstream
   - [ ] Target
 - [ ] Support for nesting objects, which is introduced from declarative configuration
