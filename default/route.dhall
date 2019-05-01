@@ -10,6 +10,6 @@
   , preserve_host = ([] : Optional Bool)
   , snis = ([] : Optional (List Text))
   , sources = ([] : Optional (List Text))
-  , destination = ([] : Optional (List Text))
+  , destinations = ([] : Optional (List Text))
   , tags = ([] : Optional (List Text))
   } : ../types/route.dhall

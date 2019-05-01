@@ -4,4 +4,6 @@
 , upstreams : (Optional (List ./upstream.dhall))
 , targets : (Optional (List ./target.dhall))
 , certificates : (Optional (List ./certificate.dhall))
+, consumers : (Optional (List ./consumer.dhall))
+, plugins : (Optional (List ./plugin.dhall))
 }

@@ -6,11 +6,11 @@ under CI/CD pipeline. This library aims at providing an interface for developers
 to define a configurable configuration file for Kong.
 
 ## Development Schedule
-- [ ] Basic objects defined in admin API
+- [X] Basic objects defined in admin API
   - [X] Service
   - [X] Route
   - [X] Consumer
-  - [ ] Plugin
+  - [X] Plugin
   - [X] Certificate
   - [X] SNI
   - [X] Upstream

@@ -44,10 +44,18 @@ let myCert = [
 {- Create comsumer object -}
 let mkConsumer = ../default/consumer.dhall
 
-let myConsumer = [mkConsumer // { custom_id = "my-comsumer" }]
+let myConsumer = [mkConsumer // { custom_id = Some "my-comsumer" }]
+
+{- Activate plugin on my service -}
+let mkPlugin = ../default/plugin.dhall
+
+let myPlugin = [mkPlugin "my-plugin" "first" ["https"]
+                  // { config = Some [ { mapKey = "config", mapValue = "value" } ]
+                     , service = Some serviceName
+                     }
+               ]
 
 {- Combine all Kong objects into one single file -}
-
 in config
   // { certificates = Some myCert
      , services = Some myService
@@ -55,4 +63,5 @@ in config
      , upstreams = Some myUpstream
      , targets = Some myTarget
      , consumers = Some myConsumer
-     }
+     , plugins = Some myPlugin
+     } : ../types/configuration.dhall
