@@ -13,8 +13,8 @@ to define a configurable configuration file for Kong.
   - [ ] Plugin
   - [X] Certificate
   - [X] SNI
-  - [ ] Upstream
-  - [ ] Target
+  - [X] Upstream
+  - [X] Target
 - [ ] Support for nesting objects, which is introduced from declarative configuration
 
 ## How to use

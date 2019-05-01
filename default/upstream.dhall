@@ -6,5 +6,9 @@
   , hash_fallback_header = ([] : Optional Text)
   , hash_on_cookie = ([] : Optional Text)
   , hash_on_cookie_path = ([] : Optional Text)
-  , slot = ([] : Optional Natural)
+  , slots = ([] : Optional Natural)
+  , tags = ([] : Optional (List Text))
+  , healthchecks = Some { active = Some ./upstream/active_healthcheck.dhall
+                        , passive = Some ./upstream/passive_healthcheck.dhall
+                        }
   } : ../types/upstream.dhall

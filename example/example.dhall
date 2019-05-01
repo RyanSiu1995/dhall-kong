@@ -7,11 +7,12 @@ let mkService = ../default/service.dhall
 let mkRoute = ../default/route.dhall
 
 let serviceName = "my-service-object"
+let upstreamName = "upstream-server"
 
 let myService = [
   mkService
   // { name = Some serviceName
-     , url = Some "http://upstream-server:8080/api"
+     , url = Some "http://${upstreamName}:8080/api"
      }
 ]
 
@@ -23,6 +24,13 @@ let myRoute = [
      , paths = Some ["/api/v1"]
      }
 ]
+
+{- Create upstream with target -}
+let mkUpstream = ../default/upstream.dhall
+let mkTarget = ../default/target.dhall
+
+let myUpstream = [mkUpstream upstreamName]
+let myTarget = [mkTarget "my-target" upstreamName 8080]
 
 {- Create a SNI with certificate -}
 let mkCert = ../default/certificate.dhall
@@ -39,4 +47,6 @@ in config
   // { certificates = Some myCert
      , services = Some myService
      , routes = Some myRoute
+     , upstreams = Some myUpstream
+     , targets = Some myTarget
      }
