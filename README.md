@@ -38,6 +38,8 @@ let myCert: ./types/certificate.dhall = mkCert "myCert" "myKey" // { sni = Some 
 in config // { certificates = Some [myCert] }
 ```
 
+For more example, please check the [example.dhall](./example/example.dhall) file.
+
 ## Contribution
 
 The project is now under development. Welcome to open an issue and submit pull request
