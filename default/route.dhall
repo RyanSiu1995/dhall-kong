@@ -1,7 +1,7 @@
 λ (service : Text) →
   { service = service
   , name = ([] : Optional Text)
-  , protocol = ([] : Optional (List Text))
+  , protocols = ([] : Optional (List Text))
   , methods = ([] : Optional (List Text))
   , hosts = ([] : Optional (List Text))
   , paths = ([] : Optional (List Text))
