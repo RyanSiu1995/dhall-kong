@@ -7,7 +7,7 @@ to define a configurable configuration file for Kong.
 
 ## Development Schedule
 - [ ] Basic objects defined in admin API
-  - [ ] Service
+  - [X] Service
   - [ ] Route
   - [ ] Consumer
   - [ ] Plugin

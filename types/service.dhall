@@ -1,7 +1,7 @@
 { name : (Optional Text)
 , retries : (Optional Natural)
 , host : (Optional Text)
-, port : (Optional Text)
+, port : (Optional Natural)
 , protocol : (Optional Text)
 , path : (Optional Text)
 , connection_timeout : (Optional Natural)
