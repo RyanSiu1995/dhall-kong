@@ -41,6 +41,11 @@ let myCert = [
     // { snis = Some [mkSni myDomain] }
 ]
 
+{- Create comsumer object -}
+let mkConsumer = ../default/consumer.dhall
+
+let myConsumer = [mkConsumer // { custom_id = "my-comsumer" }]
+
 {- Combine all Kong objects into one single file -}
 
 in config
@@ -49,4 +54,5 @@ in config
      , routes = Some myRoute
      , upstreams = Some myUpstream
      , targets = Some myTarget
+     , consumers = Some myConsumer
      }

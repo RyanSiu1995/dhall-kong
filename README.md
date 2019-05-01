@@ -9,7 +9,7 @@ to define a configurable configuration file for Kong.
 - [ ] Basic objects defined in admin API
   - [X] Service
   - [X] Route
-  - [ ] Consumer
+  - [X] Consumer
   - [ ] Plugin
   - [X] Certificate
   - [X] SNI
